@@ -1,46 +1,55 @@
-{% load static  %}
-<!DOCTYPE html>
+{% load static %}
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles/normalize.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/skeleton.css' %}" />
+
     <title>Inicio</title>
-</head>
+  </head>
 
-<body>
-<h1>Almacenamiento de autos </h1>
-<div id="Lista de opciones" >
-<table>
-    <tr >
-        <td><h class="inline">home |</h></td>  
-        <td><h class="inline">Nosotros|</h></td>
-        <td><h class="inline">Clientes|</h></td>
-        <td><h class="inline">Productos|</h></td>
-        <td><h class="inline">Trabajadores|</h></td>
-        <td><h class="inline">Provedores|</h></td>
-        <td><h class="inline">Sucursales|</h></td>
-    </tr>
-    
-</table>
-<div  id = DC_Empresa>
-    <img src="" alt="">
-    <div>
-        <h1>Descripcion De la Empresa</h1>
-        <p>Esta es una empresa para traficar droga disfrazada de Almacen de autos si eres del FBI si es un almacen sino eres a $5 el kilo</p>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Almacenamiento de autos</h1>
+      </div>
+      <div id="nav_bar">
+        <table>
+          <tr>
+            <td><h class="inline">home |</h></td>
+            <td><h class="inline">Nosotros|</h></td>
+            <td><h class="inline">Clientes|</h></td>
+            <td><h class="inline">Productos|</h></td>
+            <td><h class="inline">Trabajadores|</h></td>
+            <td><h class="inline">Provedores|</h></td>
+            <td><h class="inline">Sucursales|</h></td>
+          </tr>
+        </table>
+      </div>
+      <div class="row" id="DC_Empresa">
+        <div class="five columns">
+          <img src="" alt="xd" />
+        </div>
+        <div class="seven columns">
+          <h1>Descripcion De la Empresa</h1>
+          <p>
+            Esta es una empresa para traficar droga disfrazada de Almacen de
+            autos si eres del FBI si es un almacen sino eres a $5 el kilo
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="seven columns">
+          <h1>Historial De la Empresa</h1>
+          <p>Era una vez un niño que jugo GTA...</p>
+        </div>
+        <div class="five columns">
+          <img src="" alt="no hay" />
+        </div>
+      </div>
     </div>
-     
-
-</div>
-<div>
-    <img src="" alt="">
-    <div>
-        <h1>Historial De la Empresa</h1>
-        <p>Era una vez un niño que jugo GTA...</p>
-    </div>
-</div>
-</div>
-    
-
-</body>
+  </body>
 </html>

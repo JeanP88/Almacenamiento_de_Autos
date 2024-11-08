@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "Principal.apps.PrincipalConfig",
-    "Nosotros.apps.NosotrosConfig"
+    "Nosotros.apps.NosotrosConfig",
+    "Clientes.apps.ClientesConfig",
+    "Productos.apps.ProductosConfig"
 ]
 
 MIDDLEWARE = [
@@ -78,12 +80,8 @@ WSGI_APPLICATION = "inicio.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "autos_almacen",
-        "USER": "thehunter101",
-        "PASSWORD": "ArribaLasMenores",
-        "HOST": "localhost",  # o tu host de base de datos
-        "PORT": "5432",  # o el puerto que estés utilizando
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": ":memory:", # o el puerto que estés utilizando
     }
 }
 

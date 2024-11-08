@@ -1,6 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-
-def index(request):
-    return HttpResponse("Hola estos es mi vista UwU")
+def trabajadores(request):
+    return render(request,'html/trabajadores.html')

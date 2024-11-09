@@ -40,11 +40,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "Principal.apps.PrincipalConfig",
     "Nosotros.apps.NosotrosConfig",
-<<<<<<< HEAD
-=======
     "Clientes.apps.ClientesConfig",
-    "Productos.apps.ProductosConfig"
->>>>>>> 358a419c27d50c360d92af9e89b1aa00cbe0d154
+    "Productos.apps.ProductosConfig",
+    "Proveedores.apps.ProveedoresConfig",
+    "Sucursales.apps.SucursalesConfig",
 ]
 
 MIDDLEWARE = [

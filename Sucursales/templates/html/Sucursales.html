@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/normalizee.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/skeletonn.css' %}">
+    <title>Sitio Web de Empresa</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .logo img {
+            width: 100px; /* Ajusta el tamaño según la necesidad */
+        }
+        nav#nav_bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav#nav_bar a {
+            margin: 0 10px;
+        }
+        .sucursal-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sucursal-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .sucursal-card {
+            border: 1px solid #000;
+            width: 300px;
+            padding: 10px;
+            text-align: left;
+            position: relative;
+        }
+        .sucursal-card .edit-btn, .sucursal-card .delete-btn {
+            position: absolute;
+            top: 10px;
+        }
+        .edit-btn {
+            right: 40px;
+        }
+        .delete-btn {
+            right: 10px;
+        }
+        .add-sucursal {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 5px 15px;
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            text-decoration: none;
+        }
+        .sucursal-image {
+            border-top: 1px solid #000;
+            margin-top: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Almacenamientos De Autos</h1>
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo Empresa">
+            </div>
+        </header>
+
+        <nav id="nav_bar">
+            <a href="#">Home</a> |
+            <a href="#">Nosotros</a> |
+            <a href="#">Clientes</a> |
+            <a href="#">Productos</a> |
+            <a href="#">Trabajadores</a> |
+            <a href="#">Proveedores</a> |
+            <a href="#">Sucursales</a>
+        </nav>
+
+        <div class="sucursal-section">
+            <h2>NUESTRAS SUCURSALES</h2>
+            <a href="#" class="add-sucursal">+ Agregar Sucursal</a>
+            <div class="sucursal-grid">
+                <div class="sucursal-card">
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                    <p>DIRECCION</p>
+                    <p>CIUDAD</p>
+                    <p>DIRECCION</p>
+                    <div class="sucursal-image">IMAGEN SUCURSAL</div>
+                </div>
+                <div class="sucursal-card">
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                    <p>DIRECCION</p>
+                    <p>CIUDAD</p>
+                    <p>DIRECCION</p>
+                    <div class="sucursal-image">IMAGEN SUCURSAL</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

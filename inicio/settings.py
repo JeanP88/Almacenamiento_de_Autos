@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "Principal.apps.PrincipalConfig",
-    "Nosotros.apps.NosotrosConfig"
+    "Nosotros.apps.NosotrosConfig",
 ]
 
 MIDDLEWARE = [
@@ -77,14 +77,7 @@ WSGI_APPLICATION = "inicio.wsgi.application"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "autos_almacen",
-        "USER": "thehunter101",
-        "PASSWORD": "ArribaLasMenores",
-        "HOST": "localhost",  # o tu host de base de datos
-        "PORT": "5432",  # o el puerto que estés utilizando
-    }
+    "default": {"ENGINE": "django.db.backends.sqlite3", "NAME": BASE_DIR / "db.sqlite3"}
 }
 
 # Password validation

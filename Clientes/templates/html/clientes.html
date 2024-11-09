@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/normalizee.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/skeletonn.css' %}" />
+
+    <title>Clientes</title> 
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="" alt="">
+            <h1>Almacenamientos De Autos</h1>
+        </div>
+        <div id="nav_bar">
+            <table>
+                <tr>
+                    <td><h class="inline">home |</h></td>
+                    <td><h class="inline">Nosotros|</h></td>
+                    <td><h class="inline">Clientes|</h></td>
+                    <td><h class="inline">Productos|</h></td>
+                    <td><h class="inline">Trabajadores|</h></td>
+                    <td><h class="inline">Provedores|</h></td>
+                    <td><h class="inline">Sucursales|</h></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Nuevo contenido en forma de filas -->
+        <div id="add_client_section">
+            <h2>Cliente</h2>
+            <div style="flex-basis: 100%;">
+                <button type="submit">Agregar Cliente</button>
+            </div>
+            <form style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1;">
+                    <label for="cedula">Cédula:</label>
+                    <input type="text" id="cedula" name="cedula" required>
+                </div>
+
+                <div style="flex: 1;">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div style="flex: 1;">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+
+                <div style="flex: 1;">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div style="flex: 1;">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+
+            </form>
+
+            <h3>Opciones</h3>
+            <div style="display: flex; gap: 10px;">
+                <button onclick="">Editar Cliente</button>
+                <button onclick="">Eliminar Cliente</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

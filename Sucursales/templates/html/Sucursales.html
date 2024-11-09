@@ -8,25 +8,51 @@
     <link rel="stylesheet" href="{% static 'styles/skeletonn.css' %}">
     <title>Sitio Web de Empresa</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 0;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
         }
         .logo img {
-            width: 100px; /* Ajusta el tamaño según la necesidad */
+            width: 100px;
+            height: auto;
         }
         nav#nav_bar {
             text-align: center;
             margin-bottom: 20px;
         }
         nav#nav_bar a {
-            margin: 0 10px;
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
         }
         .sucursal-section {
             text-align: center;
             margin-bottom: 20px;
+        }
+        .sucursal-section h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .add-sucursal {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 8px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
         }
         .sucursal-grid {
             display: flex;
@@ -37,27 +63,10 @@
         .sucursal-card {
             border: 1px solid #000;
             width: 300px;
-            padding: 10px;
+            padding: 15px;
             text-align: left;
             position: relative;
-        }
-        .sucursal-card .edit-btn, .sucursal-card .delete-btn {
-            position: absolute;
-            top: 10px;
-        }
-        .edit-btn {
-            right: 40px;
-        }
-        .delete-btn {
-            right: 10px;
-        }
-        .add-sucursal {
-            display: inline-block;
-            margin-bottom: 20px;
-            padding: 5px 15px;
-            background-color: #f0f0f0;
-            border: 1px solid #000;
-            text-decoration: none;
+            border-radius: 8px;
         }
         .sucursal-image {
             border-top: 1px solid #000;
@@ -65,6 +74,21 @@
             padding: 10px;
             text-align: center;
             font-size: 14px;
+            color: #555;
+        }
+        .sucursal-actions {
+            margin-top: 10px;
+            text-align: right;
+        }
+        .sucursal-actions button {
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .sucursal-actions button:hover {
+            color: red;
         }
     </style>
 </head>
@@ -92,23 +116,28 @@
             <a href="#" class="add-sucursal">+ Agregar Sucursal</a>
             <div class="sucursal-grid">
                 <div class="sucursal-card">
-                    <button class="edit-btn">✏️</button>
-                    <button class="delete-btn">🗑️</button>
-                    <p>DIRECCION</p>
-                    <p>CIUDAD</p>
-                    <p>DIRECCION</p>
+                    <p><strong>Dirección</strong></p>
+                    <p>Ciudad</p>
+                    <p>Teléfono</p>
                     <div class="sucursal-image">IMAGEN SUCURSAL</div>
+                    <div class="sucursal-actions">
+                        <button>✏️</button>
+                        <button>🗑️</button>
+                    </div>
                 </div>
                 <div class="sucursal-card">
-                    <button class="edit-btn">✏️</button>
-                    <button class="delete-btn">🗑️</button>
-                    <p>DIRECCION</p>
-                    <p>CIUDAD</p>
-                    <p>DIRECCION</p>
+                    <p><strong>Dirección</strong></p>
+                    <p>Ciudad</p>
+                    <p>Teléfono</p>
                     <div class="sucursal-image">IMAGEN SUCURSAL</div>
+                    <div class="sucursal-actions">
+                        <button>✏️</button>
+                        <button>🗑️</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+

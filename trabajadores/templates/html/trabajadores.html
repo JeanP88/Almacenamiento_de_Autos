@@ -6,22 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'styles/normalizee.css' %}">
     <link rel="stylesheet" href="{% static 'styles/skeletonn.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
-
-    <title>Trabajadores</title>
+    <title>Almacenamiento de Autos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+        nav#nav_bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav#nav_bar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .product-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-section h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .add-product {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 8px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #000;
+            width: 300px;
+            padding: 15px;
+            text-align: left;
+            position: relative;
+            border-radius: 8px;
+        }
+        .product-image {
+            border-top: 1px solid #000;
+            margin-top: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+        .product-actions {
+            margin-top: 10px;
+            text-align: right;
+        }
+        .product-actions button {
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .product-actions button:hover {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
-        <header class="container">
-            <h1>Almacenamientos De Autos</h1>
+        <header>
+            <h1>Almacenamiento de Autos</h1>
             <div class="logo">
-                <img src="" alt="logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo">
             </div>
         </header>
 
-        <!-- Navigation Bar -->
-        <nav class="container"    id="nav_bar">
+        <nav id="nav_bar">
             <a href="#">Home</a> |
             <a href="#">Nosotros</a> |
             <a href="#">Clientes</a> |
@@ -31,58 +111,39 @@
             <a href="#">Sucursales</a>
         </nav>
 
-        <!-- Nuestro Personal Section -->
-        <div class="container">
+        <div class="product-section">
             <h2>Nuestro Personal</h2>
-            <a href="#" class="add-worker">+ Agregar Trabajador</a>
-            <div class="personal-grid">
-                <!-- Worker Card 1 -->
-                <div class="worker-card">
-                    <div class="worker-image">IMAGEN DEL COLABORADOR</div>
-                    <p><strong>Nombre Colaborador</strong></p>
+            <a href="#" class="add-product">+ Agregar Trabajador</a>
+            <div class="product-grid">
+                <div class="product-card">
+                    <p><strong>Nombre Trabajador</strong></p>
                     <p>Correo</p>
                     <p>Tipo de Trabajador</p>
                     <p>Código de empleado</p>
-                    <div class="worker-actions">
+                    <div class="product-image">IMAGEN DEL TRABAJADOR</div>
+                    <div class="product-actions">
                         <button>✏️</button>
                         <button>🗑️</button>
                     </div>
                 </div>
-                
-                <!-- Worker Card 2 -->
-                <div class="worker-card">
-                    <div class="worker-image">IMAGEN DEL COLABORADOR</div>
-                    <p><strong>Nombre Colaborador</strong></p>
+                <div class="product-card">
+                    <p><strong>Nombre Trabajador</strong></p>
                     <p>Correo</p>
                     <p>Tipo de Trabajador</p>
                     <p>Código de empleado</p>
-                    <div class="worker-actions">
+                    <div class="product-image">IMAGEN DEL TRABAJADOR</div>
+                    <div class="product-actions">
                         <button>✏️</button>
                         <button>🗑️</button>
                     </div>
                 </div>
-                
-                <!-- Worker Card 3 -->
-                <div class="worker-card">
-                    <div class="worker-image">IMAGEN DEL COLABORADOR</div>
-                    <p><strong>Nombre Colaborador</strong></p>
+                <div class="product-card">
+                    <p><strong>Nombre Trabajador</strong></p>
                     <p>Correo</p>
                     <p>Tipo de Trabajador</p>
                     <p>Código de empleado</p>
-                    <div class="worker-actions">
-                        <button>✏️</button>
-                        <button>🗑️</button>
-                    </div>
-                </div>
-                
-                <!-- Worker Card 4 -->
-                <div class="worker-card">
-                    <div class="worker-image">IMAGEN DEL COLABORADOR</div>
-                    <p><strong>Nombre Colaborador</strong></p>
-                    <p>Correo</p>
-                    <p>Tipo de Trabajador</p>
-                    <p>Código de empleado</p>
-                    <div class="worker-actions">
+                    <div class="product-image">IMAGEN DEL TRABAJADOR</div>
+                    <div class="product-actions">
                         <button>✏️</button>
                         <button>🗑️</button>
                     </div>

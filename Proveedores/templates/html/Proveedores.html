@@ -7,14 +7,97 @@
     <link rel="stylesheet" href="{% static 'styles/normalizee.css' %}">
     <link rel="stylesheet" href="{% static 'styles/skeletonn.css' %}">
     <title>Almacenamiento de Autos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+        nav#nav_bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav#nav_bar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .product-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-section h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .add-product {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 8px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #000;
+            width: 300px;
+            padding: 15px;
+            text-align: left;
+            position: relative;
+            border-radius: 8px;
+        }
+        .product-image {
+            border-top: 1px solid #000;
+            margin-top: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+        .product-actions {
+            margin-top: 10px;
+            text-align: right;
+        }
+        .product-actions button {
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .product-actions button:hover {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Almacenamientos De Autos</h1>
-            
+            <h1>Almacenamiento de Autos</h1>
             <div class="logo">
-                <img src="" alt="Logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo">
             </div>
         </header>
 
@@ -33,33 +116,33 @@
             <a href="#" class="add-product">+ Agregar Proveedores</a>
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="product-image">Imagen del producto</div>
                     <p>NOMBRE PROVEEDORES</p>
                     <p>Correo</p>
                     <p>Telefono</p>
                     <p>Pais</p>
+                    <div class="product-image">IMAGEN DEL PROVEEDOR</div>
                     <div class="product-actions">
                         <button>✏️</button>
                         <button>🗑️</button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">Imagen del producto</div>
                     <p>NOMBRE PROVEEDORES</p>
                     <p>Correo</p>
                     <p>Telefono</p>
                     <p>Pais</p>
+                    <div class="product-image">IMAGEN DEL PROVEEDOR</div>
                     <div class="product-actions">
                         <button>✏️</button>
                         <button>🗑️</button>
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">Imagen del producto</div>
                     <p>NOMBRE PROVEEDORES</p>
                     <p>Correo</p>
                     <p>Telefono</p>
                     <p>Pais</p>
+                    <div class="product-image">IMAGEN DEL PROVEEDOR</div>
                     <div class="product-actions">
                         <button>✏️</button>
                         <button>🗑️</button>
